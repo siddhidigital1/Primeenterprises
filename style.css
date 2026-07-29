@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Header Styling */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header h1 {
+    margin: 12px 0 4px;
+    font-size: 22px;
+    color: #222;
+}
+
+.profile-header .tagline {
+    color: #666;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.call { background-color: #007bff; }
+.call:hover { background-color: #0056b3; }
+
+.whatsapp { background-color: #25d366; }
+.whatsapp:hover { background-color: #1eb956; }
+
+.map { 
+    background-color: #ffc107; 
+    color: #212529; 
+    margin-top: 8px;
+}
+.map:hover { background-color: #e0a800; }
+
+.submit { background-color: #28a745; width: 100%; }
+.submit:hover { background-color: #218838; }
+
+/* Sections */
+.section {
+    margin-bottom: 22px;
+}
+
+.section h2 {
+    font-size: 16px;
+    color: #333;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.address-box p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+}
+
+/* Services */
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.service-item {
+    background: #f8f9fa;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #444;
+    border-left: 3px solid #007bff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-item i {
+    color: #007bff;
+    width: 16px;
+    text-align: center;
+}
+
+/* Form Styles */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007bff;
+}
